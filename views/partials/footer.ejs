@@ -1,0 +1,13 @@
+	</body>
+	<script>
+		//Submitting form values and processing in 'backend'
+		$(document).ready(function() {
+			$("#triangle").on("submit",function  (e) {
+				e.preventDefault();
+				$.post("/",$(this).serialize(), function(data) {
+					$('#result').text(data);
+				});
+			})
+		});
+	</script>
+</html>

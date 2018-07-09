@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+<div class="container">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Triangle sides:</h3>
+				<form id="triangle" action="/">
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="sideA">A</label>
+							<input name="sideA" type="number" id="sideA" title="A" class="form-control" min="1" placeholder="please enter side length" required/>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="sideB">B</label>
+							<input name="sideB" type="number" id="sideB" title="B" class="form-control" min="1" placeholder="please enter side length" required/>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="sideC">C</label>
+							<input name="sideC" type="number" id="sideC" title="C" class="form-control" min='1' placeholder="please enter side length" required/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<input type="submit" name="btnCheckType" value="Check Triangle Type" id="btnCheckType" class="btn btn-block btn-lg btn-primary" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h3 id='result' style="color:#337ab7;"></h3>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<% include ../partials/footer %>
